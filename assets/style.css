@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    position: sticky;
+    top: 0;
+}
+
+header span {
+    padding: 10px 20px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 10px 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+}
+
+section {
+    min-height: 100vh;
+}
+
+h1 {
+    font-weight: bolder;
+    font-size: 36px;
+}
+
+#home {
+    background-image: url(/image/home-background.svg);
+    background-repeat: no-repeat;
+    background-position-y: bottom;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.home-text-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+#skill {
+    background-image: url(/image/skill-bot.svg);
+    background-repeat: no-repeat;
+    background-position-y: bottom;
+    display: flex;
+    flex-direction: row;
+    background-color: #0099ff;
+    justify-content: space-evenly;
+
+}
+
+#skill h1 {
+    text-align: center;
+}
+
+.skills {
+    display: flex;
+    flex-direction: column;
+}
+
+.progress-bar,
+.progress {
+    position: relative;
+    height: 7px;
+    margin-bottom: 0;
+    border-radius: 15px;
+}
+
+.progress {
+    background-color: #f1f1f1;
+}
+
+#project {
+    background-color: #f3f4f5;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+}
+
+.project-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.project {
+    width: 400px;
+    height: 300px;
+    border: black;
+    border-radius: 10px;
+    border-style: solid;
+    padding: 20px;
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+}
