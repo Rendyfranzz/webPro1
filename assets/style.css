@@ -16,7 +16,7 @@ header {
     top: 0;
     z-index: 100;
     color: black;
-    width: 100%;
+    width: 100vh;
     padding: 10px;
 }
 
@@ -72,6 +72,9 @@ h1 {
     display: flex;
     flex-direction: column;
 }
+.home-text-wrapper span{
+    color: aqua;
+}
 
 #skill {
     min-height: 100vh;
@@ -84,6 +87,7 @@ h1 {
     background-color: #0099ff;
     padding: 30px 20px 20px 20px;
 }
+
 .skill-wrapper {
     width: 100%;
     display: flex;
@@ -110,6 +114,7 @@ h1 {
     width: 400px;
     text-align: justify;
 }
+
 .skill .skill-text {
     width: 100%;
     height: 80%;
@@ -124,6 +129,9 @@ h1 {
 }
 
 #project {
+    background-image: url(/image/project-bot.svg);
+    background-position: bottom;
+    background-repeat: no-repeat;
     background-color: #f3f4f5;
     overflow: hidden;
     display: flex;
@@ -171,11 +179,12 @@ h1 {
 }
 
 #plan {
-    background-color: rgba(17, 11, 11, 0.75);
+    background-color: #273036;
     display: flex;
     justify-content: center;
     align-items: center;
     overflow: hidden;
+    margin-top: -3px;
 }
 
 .plan-wrapper {
@@ -220,10 +229,12 @@ h1 {
     line-height: 30px;
     font-weight: 300px;
 }
+
 .about {
+    margin-top: -3px;
     width: 100%;
     height: 100vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4));
+    background-color: #273036;
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
@@ -246,7 +257,7 @@ aside {
     overflow: hidden;
     margin: auto;
     width: 100%;
-    padding-left: 20px;
+    padding:10px;
     display: flex;
     justify-content: center;
     color: white;
@@ -258,7 +269,7 @@ aside table {
 }
 
 aside table td {
-    padding-left: 10px;
+    padding-left: 5px;
 }
 
 
@@ -268,24 +279,31 @@ aside table td {
     display: flex;
     flex-direction: column;
     align-items: center;
-    border-radius: 10px;
-    transition: transform .4s;
 }
 
 .biodata img {
     width: 300px;
 }
+
 footer {
     padding: 20px;
     color: white;
     background-color: rgba(0, 0, 0, 0.9);
     text-align: center;
     font-weight: bold;
+    width: 100vh;
 }
 
 
 
 @media screen and (min-width: 800px) {
+    header{
+        width: 100vw;
+    }
+
+    html {
+        overflow-x: hidden;
+    }
 
     section {
         width: 100vw;
@@ -300,6 +318,7 @@ footer {
         justify-content: space-evenly;
         align-items: center;
     }
+   
 
     #skill {
         overflow: hidden;
@@ -349,12 +368,16 @@ footer {
         justify-content: center;
         align-items: center;
     }
+
     .skill p {
         font-weight: 300px;
         letter-spacing: 1px;
     }
 
     #project {
+        background-image: url(/image/project-bot.svg);
+        background-position: bottom;
+        background-repeat: no-repeat;
         background-color: #f3f4f5;
         overflow: hidden;
         display: flex;
@@ -450,6 +473,36 @@ footer {
 
     #contact {
         height: 100vh;
-        background-color: #0099ff;
+    }
+    .biodata {
+        width: 80%;
+        height: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    aside {
+        overflow: hidden;
+        margin: 0;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+    }
+    
+    .biodata img {
+        width: 200px;
+    }
+    aside table {
+        height: 300px;
+        text-align: justify;
+    }
+    
+    aside table td {
+        padding-left: 10px;
+    }
+    footer{
+        width: 100vw;
     }
 }
