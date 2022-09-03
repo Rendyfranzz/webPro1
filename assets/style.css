@@ -229,10 +229,8 @@ h1 {
     line-height: 30px;
     font-weight: 300px;
 }
-
-.about {
-    margin-top: -3px;
-    width: 100%;
+#contact{
+    width: 100vh;
     height: 100vh;
     background-color: #273036;
     background-repeat: no-repeat;
@@ -245,12 +243,12 @@ h1 {
     overflow: hidden;
 }
 
-.about h1 {
+
+#contact h1 {
     font-size: 40px;
     font-weight: bold;
     text-transform: uppercase;
     color: white;
-    text-align: center;
 }
 
 aside {
@@ -264,7 +262,7 @@ aside {
 }
 
 aside table {
-    height: 40%;
+    height: 300px;
     text-align: justify;
 }
 
@@ -274,8 +272,6 @@ aside table td {
 
 
 .biodata {
-    width: 50%;
-    height: 50%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -473,29 +469,25 @@ footer {
 
     #contact {
         height: 100vh;
+        width: 100vw;
+    }
+    aside {
+        display: flex;
+        justify-content: center;
+        color: white;
     }
     .biodata {
-        width: 80%;
-        height: 50%;
         display: flex;
         flex-direction: column;
         align-items: center;
     }
-    aside {
-        overflow: hidden;
-        margin: 0;
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: white;
-    }
+    
     
     .biodata img {
         width: 200px;
     }
     aside table {
-        height: 300px;
+        height: 200px;
         text-align: justify;
     }
     
