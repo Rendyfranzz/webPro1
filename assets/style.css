@@ -52,7 +52,6 @@ nav ul li a:hover {
 }
 
 section {
-    width: 100vw;
     min-height: 100vh;
 }
 
@@ -290,9 +289,11 @@ h1 {
     left: 50%;
     transform: translateX(-50%);
 }
-.plan-wrapper ul li:hover{
+
+.plan-wrapper ul li:hover {
     cursor: pointer;
 }
+
 .plan-wrapper ul li:hover::after {
     background-color: aqua;
     transition: 500ms;
@@ -378,7 +379,6 @@ footer {
     background-color: #273036;
     text-align: center;
     font-weight: bold;
-    width: 100vw;
 }
 
 
@@ -395,8 +395,9 @@ footer {
     section {
         width: 100vh;
     }
-
-
+    .home-text-wrapper{
+        padding: 20px;
+    }
     #skill h1 {
         text-align: center;
     }
@@ -425,16 +426,10 @@ footer {
         width: 350px;
         height: 70px;
         padding: 4px;
-        position: absolute;
-        background: rgb(27, 27, 27, 0.5);
         color: white;
         bottom: 0;
         transition: 600ms;
     }
-
-    #contact {
-        width: 100vh;
-    }S
     .biodata img {
         width: 200px;
     }
